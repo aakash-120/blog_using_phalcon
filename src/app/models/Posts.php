@@ -9,4 +9,5 @@ class Posts extends Model
     public $title;
     public $content;
     public $date;
+    public $uid;
 }
