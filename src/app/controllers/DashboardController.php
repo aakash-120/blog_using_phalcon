@@ -67,8 +67,6 @@ class DashboardController extends Controller
         $post->content = $content;
         $post->date = $date;
         $post->uid = $session_id;
-
-
         $post->save();
 
         echo " successgul insert ";
@@ -97,8 +95,9 @@ class DashboardController extends Controller
         // print_r($table);
         // echo "</pre>";
 
-        $this->view->edit_var = $table;
-        // die();
+        $this->view->edit = $table;
+     
+      //  die();
 
     }
 
